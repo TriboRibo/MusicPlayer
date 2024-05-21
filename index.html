@@ -20,12 +20,21 @@
     <div class="player d-flex flex-column">
         <div class="d-flex justify-content-center"><i class="bi bi-list"></i></div>
         <div class="screen" id="screen">
+            <div class="nowPlaying" id="nowPlaying">Playing x of y</div>
+            <div class="trackArt" id="trackArt"></div>
             <div class="artist" id="artist">Artist:</div>
             <div class="title" id="title">Title:</div>
         </div>
-        <div class="slider" id="slider">
-            <div class="musicProgress"></div>
-            <div class="volume"><i class="bi bi-volume-down"></i><i class="bi bi-volume-up"></i></div>
+        <div class="slider d-flex flex-column align-items-center" id="slider">
+            <div class="musicProgress d-flex" id="musicProgress">
+                <div class="currentTime" id="currentTime">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seekSlider" id="seekSlider">
+                <div class="totalDuration" id="totalDuration">00:00</div>
+            </div>
+            <div class="volume d-flex">
+                <i class="bi bi-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volumeSlider" id="volumeSlider">
+                <i class="bi bi-volume-up"></i></div>
         </div>
         <div class="controlPanel d-flex gap-4 justify-content-center" id="controlPanel">
             <div class="play" id="play"><i class="bi bi-play-circle"></i></div>
