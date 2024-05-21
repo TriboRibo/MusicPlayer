@@ -51,7 +51,7 @@ function loadTrack(track_index){
     track_art.style.backgroundImage = `url(${track_list[track_index].image})`
     track_artist.textContent = track_list[track_index].artist
     track_title.textContent = track_list[track_index].title
-    now_playing.textContent = "Playing" + (track_index + 1) + "of" + track_list.length
+    now_playing.textContent = "Playing " + (track_index + 1) + " of " + track_list.length
     
     updateTimer = setInterval(seekUpdate, 1000)
     

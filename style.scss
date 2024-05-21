@@ -5,7 +5,7 @@
 }
 .player{
   border: 5px solid black;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 300px;
   font-size: 50px;
   -webkit-box-shadow: 10px 10px 31px 4px rgba(0,0,0,0.67);
@@ -14,11 +14,10 @@
 }
 .screen {
   border: 5px solid black;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 20px;
   padding: 30px 5px 30px 5px;
   margin: 10px;
-  user-select: none;
 }
 .controlPanel{
   user-select: none;
@@ -46,5 +45,24 @@
   background-size: cover;
   background-position: center;
   width: auto;
-  height: 200px;
+  height: 250px;
+  color: #ffffc4;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.volume{
+  font-size: 35px;
+}
+.volumeSlider{
+  width: 210px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.seekSlider{
+  width: 175px;
+  &:hover {
+    cursor: pointer;
+  }
 }
