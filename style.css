@@ -1,0 +1,40 @@
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.player {
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 300px;
+  font-size: 50px;
+}
+
+.screen {
+  border: 5px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 30px 5px 30px 5px;
+  margin: 10px;
+  user-select: none;
+}
+
+.controlPanel {
+  user-select: none;
+}
+
+.controlPanel > div:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.secondControlPanel {
+  user-select: none;
+}
+
+.secondControlPanel > div:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */
